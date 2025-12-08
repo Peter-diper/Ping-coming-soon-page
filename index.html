@@ -15,13 +15,34 @@
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    <div class="form--controler">
-      <input
-        type="email"
-        class="form--input form--input--invalid"
-        placeholder="Your email address…"
-      />
-      <span id="error--messsage">Please provide a valid email address</span>
-    </div>
+    <main class="container`">
+      <!-- form  -->
+      <form id="main--form" novalidate action="">
+        <!-- form header -->
+        <div class="main--form--header">
+          <img src="./assets/images/logo.svg" class="logo" alt="" />
+          <h1 class="form--title">We are launching <strong>soon!</strong></h1>
+          <p class="form--message">Subscribe and get notified</p>
+        </div>
+        <!-- form footer -->
+
+        <div class="main--form--footer">
+          <div class="form--controler">
+            <input
+              type="email"
+              class="form--input"
+              placeholder="Your email address…"
+            />
+            <span id="error--messsage"
+              >Please provide a valid email address</span
+            >
+            <button type="submit" class="btn">Notify Me</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="content"></div>
+    </main>
+    <footer></footer>
   </body>
 </html>

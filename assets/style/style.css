@@ -41,7 +41,10 @@ html {
   font-size: 62.5%;
 }
 body {
+  min-height: 100vh;
   font-family: "Libre Franklin", serif;
+  display: grid;
+  align-content: center;
 }
 
 /* input */
@@ -86,9 +89,76 @@ body {
 }
 
 #error--messsage {
-  color: var(--color-red-400);
+  color: white;
   font-style: italic;
   font-size: var(--fs-pr4);
   line-height: var(--lh-pr4);
   padding: 0 var(--space-400);
+}
+
+/* btn */
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: var(--space-200) var(--space-600);
+  font-size: var(--fs-pr3);
+  line-height: var(--lh-pr3);
+  font-weight: 600;
+  color: white;
+  background-color: var(--color-blue-500);
+  transition: all 200ms;
+  border-radius: calc(var(--space-300) + 0.4rem);
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+/* social icon */
+.social--group {
+  display: flex;
+  gap: var(--space-200);
+  justify-self: center;
+  cursor: pointer;
+}
+
+/* logo */
+.logo {
+  max-width: 5.3rem;
+  align-self: center;
+  margin-bottom: var(--space-500);
+}
+
+/* form */
+#main--form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-500);
+}
+
+.form--title {
+  font-size: var(--fs-pr2);
+  line-height: var(--lh-pr2);
+  font-weight: 300;
+  color: var(--color-grey-400);
+}
+
+.form--title strong {
+  font-weight: bold;
+  color: var(--color-blue-950);
+}
+
+.main--form--header {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
 }
