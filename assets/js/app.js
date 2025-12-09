@@ -2,7 +2,7 @@ const emailInput = document.querySelector(".form--input");
 const form = document.querySelector("#main--form");
 const erorrMessage = document.querySelector("#error--messsage");
 const headerMessage = document.querySelector("h1");
-
+console.log("first");
 // event
 form.addEventListener("submit", check);
 
