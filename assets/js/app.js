@@ -10,11 +10,12 @@ form.addEventListener("submit", check);
 function check(e) {
   e.preventDefault();
   const emailValue = emailInput.value;
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (
     emailValue.indexOf("@") === -1 ||
     emailValue.length <= 11 ||
-    !emailValue.slice(-5).includes(".")
+    !emailPattern.test(emailValue)
   ) {
     erorrMessage.textContent = "Please provide a valid email address";
     erorrMessage.style.color = "red";
