@@ -15,17 +15,17 @@
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    <main class="container`">
+    <main class="hero--section container">
       <!-- form  -->
-      <form id="main--form" novalidate action="">
+      <form id="main--form" novalidate>
         <!-- form header -->
         <div class="main--form--header">
           <img src="./assets/images/logo.svg" class="logo" alt="" />
           <h1 class="form--title">We are launching <strong>soon!</strong></h1>
           <p class="form--message">Subscribe and get notified</p>
         </div>
-        <!-- form footer -->
 
+        <!-- form footer -->
         <div class="main--form--footer">
           <div class="form--controler">
             <input
@@ -33,16 +33,38 @@
               class="form--input"
               placeholder="Your email address…"
             />
-            <span id="error--messsage"
-              >Please provide a valid email address</span
-            >
+
             <button type="submit" class="btn">Notify Me</button>
           </div>
+          <span id="error--messsage">Please provide a valid email address</span>
         </div>
       </form>
 
-      <div class="content"></div>
+      <div class="content">
+        <img
+          src="./assets/images/illustration-dashboard.png"
+          class="hero--img"
+          alt="dashbord image"
+        />
+      </div>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="social--group">
+        <a href="#"
+          ><img src="./assets/images/Frame1.svg" class="social--icon" alt=""
+        /></a>
+
+        <a href="#"
+          ><img src="./assets/images/Frame2.svg" class="social--icon" alt=""
+        /></a>
+
+        <a href="#"
+          ><img src="./assets/images/Frame3.svg" class="social--icon" alt=""
+        /></a>
+      </div>
+      <p class="copy--write">&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+    <script src="/assets/js/app.js"></script>
   </body>
 </html>
